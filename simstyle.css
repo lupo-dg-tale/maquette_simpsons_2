@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gold;
+    margin: 0;
+}
+
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: steelblue;
+}
+
+.pinaise {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    padding: 0.2em;
+    margin: 0;
+    text-transform: uppercase;
+    border-bottom: solid white 1px;
+}
+
+.simg {
+    width: 100%;
+    margin-bottom: -23%;
+}
+
+.s2 {
+    background-color: white;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.s1 {
+    width: 100%;
+}
+
+nav {
+    background-color: steelblue;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    border-top: solid white 1px;
+}
+
+
+nav a {
+    padding: 1em;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: blueviolet;
+}
+
+article {
+    text-align: justify;
+    padding: 0.5em;
+    margin: 0;
+    display: flex;
+}
+
+h1 {
+    color: gold;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 0.5em 0.5em 0;
+    margin: 0;
+    text-transform: uppercase;
+    width: 100%;
+    border-top: dashed black 1px;
+}
+
+.art {
+    width: 75%;
+}
+
+article p {
+    margin: 0;
+    padding: 1em;
+}
+
+.film {
+    margin: 0;
+    padding: 1em;
+    justify-content: space-between;
+    display: flex;
+}
+
+.film div {
+    border: solid black 1px;
+    width: 32%;
+    overflow: hidden;
+}
+
+.movie {
+    width: 100%;
+    margin-bottom: -30%;
+}
+
+aside {
+    background-color: steelblue;
+    height: 80%;
+    width: 37%;
+    color: white;
+    padding: 0.5em;
+    margin: 1em 0.5em;
+    margin-left: 1em;
+}
+
+figcaption {
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3, h4 {
+    margin: 0;
+}
+
+h4 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.mgi {
+    border: white solid;
+    height: 100%;
+    width: 100%;
+}
+
+aside p {
+    text-align: justify;
+    font-weight: 400;
+    /*probleme en petit écran comme pour l'image, le figcaption et le strong*/
+}
+
+strong {
+    color: salmon;
+}
+
+footer {
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    padding: 0.2em;
+}
+
+@media screen and (max-width: 375px) {
+    .pinaise {
+        font-size: 24px;
+    }
+    article {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    h1 {
+        font-size: 36px;
+        padding: 0.5em;
+    }
+    article p {
+        padding: 0;
+    }
+    .film {
+        padding: 0;
+        flex-direction: column;
+    }
+    .film div {
+        width: 100%;
+        margin-top: 1em;
+    }
+    aside {
+        width: 100%;
+        margin: 1em 0.5em;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        font-size: 16px;
+    }
+}
